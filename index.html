@@ -15,81 +15,53 @@
 </head>
 
 <body>
-    <!-- 로고 전까지 -->
+    <!-- 헤더 이미지 -->
     <header>
-        <div id="header_top">
-            <div id="header_top_img">
-                <img src="https://contents.kyobobook.co.kr/display/초중고신학기_1200_70_995b4f1f4aa4484a943850639faeb52b.jpg"
-                    alt="header_top_img">
-            </div>
-        </div>
-        <div id="header_main">
-            <div id="category">
-                <nav>
-                    <ul>
-                        <li><a href="#">교보문고</a></li>
-                        <li><a href="#">eBook</a></li>
-                        <li><a href="#">sam</a></li>
-                        <li><a href="#">핫트랙스</a></li>
-                        <li><a href="#">스토리</a></li>
-                        <li><a href="#">브랜드 더보기 ▼</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div id="login">
-                <nav>
-                    <ul>
-                        <li><a href="#">회원가입</a></li>
-                        <li><a href="#">로그인</a></li>
-                        <li><a href="#">회원혜택 ▼</a></li>
-                        <li><a href="#">주문배송</a></li>
-                        <li><a href="#">매장안내</a></li>
-                        <li><a href="#">고객센터</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div id="header_top_img">
+            <img src="https://contents.kyobobook.co.kr/display/초중고신학기_1200_70_995b4f1f4aa4484a943850639faeb52b.jpg"
+                alt="header_top_img">
         </div>
     </header>
+
+    <!-- 이미지부터 카테고리, 로그인 -->
+    <div id="header_main">
+        <div id="category"></div>
+        <div id="login"></div>
+    </div>
+
 
     <!-- 로고부터 오늘의 선택 전까지 -->
     <main>
         <div id="main_top">
-            <div id="logo_search">
+            <div id="mt_top">
                 <div id="logo">
                     <img src="https://contents.kyobobook.co.kr/resources/fo/images/common/ink/united/logo_book.svg"
                         alt="logo">
                 </div>
                 <search>
-
+                    <!-- /* ////////////////////////////////////////////// */ -->
                 </search>
-                <div id="shopping">
-                    <i class="fa-solid fa-cart-shopping"></i>
+                <div id="emoticon">
+                    <div id="shopping">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div id="mypage">
+                        <i class="fa-regular fa-circle-user"></i>
+                    </div>
                 </div>
-                <div id="mypage">
-                    <i class="fa-regular fa-circle-user"></i>
-                </div>
+
+
             </div>
             <menu>
                 <div id="menu_img">
                     <i class="fa-solid fa-bars"></i>
                 </div>
-                <div id="menu_text">
-                    <nav>
-                        <ul>
-                            <li><a href="#">회원가입</a></li>
-                            <li><a href="#">로그인</a></li>
-                            <li><a href="#">회원혜택 ▼</a></li>
-                            <li><a href="#">주문배송</a></li>
-                            <li><a href="#">매장안내</a></li>
-                            <li><a href="#">고객센터</a></li>
-                        </ul>
-                    </nav>
-                </div>
+                <div id="menu_text"></div>
             </menu>
         </div>
         <div id="silder">
             <!-- Swiper -->
-            <div class="swiper mySwiper">
+            <div class="swiper Swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">Slide 1</div>
                     <div class="swiper-slide">Slide 2</div>
@@ -101,8 +73,20 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </div>
+            <!-- <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div> -->
         </div>
-        <div id="event"></div>
+        <div id="event">
+
+        </div>
     </main>
 
     <!-- 오늘의 선택부터 캐스팅까지 -->
