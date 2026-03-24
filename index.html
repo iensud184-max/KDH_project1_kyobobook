@@ -15,19 +15,44 @@
 </head>
 
 <body>
-    <!-- 헤더 이미지 -->
+    <!-- 처음부터 카테고리, 로그인 -->
     <header>
-        <div id="header_top_img">
-            <img src="https://contents.kyobobook.co.kr/display/초중고신학기_1200_70_995b4f1f4aa4484a943850639faeb52b.jpg"
-                alt="header_top_img">
+        <div id="header_top">
+            <div id="header_top_img">
+                <img src="https://contents.kyobobook.co.kr/display/초중고신학기_1200_70_995b4f1f4aa4484a943850639faeb52b.jpg"
+                    alt="header_top_img">
+            </div>
+        </div>
+        <div id="header_main">
+            <div id="header_not_color"></div>
+            <div id="header_color">
+                <div id="category">
+                    <nav>
+                        <ul>
+                            <li><a href="#">교보문고</a></li>
+                            <li><a href="#">eBook</a></li>
+                            <li><a href="#">sam</a></li>
+                            <li><a href="#">핫트랙스</a></li>
+                            <li><a href="#">스토리</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="login">
+                    <nav>
+                        <ul>
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원혜택 ▼</a></li>
+                            <li><a href="#">주문배송</a></li>
+                            <li><a href="#">매장안내</a></li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- 이미지부터 카테고리, 로그인 -->
-    <div id="header_main">
-        <div id="category"></div>
-        <div id="login"></div>
-    </div>
 
 
     <!-- 로고부터 오늘의 선택 전까지 -->
@@ -38,9 +63,17 @@
                     <img src="https://contents.kyobobook.co.kr/resources/fo/images/common/ink/united/logo_book.svg"
                         alt="logo">
                 </div>
-                <search>
-                    <!-- /* ////////////////////////////////////////////// */ -->
-                </search>
+                <div id="search">
+                    <select id="search_category">
+                        <option value="title">통합검색</option>
+                        <option value="second">교보문고</option>
+                        <option value="third">eBook</option>
+                        <option value="fourth">sam</option>
+                        <option value="fifth">핫트랙스</option>
+                    </select>
+                    <input type="text" id="search_main" onkeyup="searchTable()">
+                    <button id="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
                 <div id="emoticon">
                     <div id="shopping">
                         <i class="fa-solid fa-cart-shopping"></i>
@@ -49,53 +82,341 @@
                         <i class="fa-regular fa-circle-user"></i>
                     </div>
                 </div>
-
-
             </div>
             <menu>
                 <div id="menu_img">
-                    <i class="fa-solid fa-bars"></i>
+                    <button id="menu_img_btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
                 </div>
-                <div id="menu_text"></div>
+                <div id="menu_text">
+                    <nav>
+                        <ul>
+                            <li><a href="#">시계시의날</a></li>
+                            <li><a href="#">새학기의혜탹</a></li>
+                            <li><a href="#">베스트</a></li>
+                            <li><a href="#">신상품</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">바로펀딩</a></li>
+                            <li><a href="#">PICKS</a></li>
+                            <li><a href="#">CASTing</a></li>
+                            <li><a href="#">컬쳐라운지</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </menu>
         </div>
-        <div id="silder">
-            <!-- Swiper -->
-            <div class="swiper Swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
+        <div id="main_down">
+            <div id="slider">
+                <!-- Swiper -->
+                <div class="swiper main_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://contents.kyobobook.co.kr/pmtn/2026/event/i_890_380_e7e1b122f769461d88fe436bc4a16ca9.jpg"
+                                alt="main_slider1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://contents.kyobobook.co.kr/pmtn/2026/event/i_890_380_8a08fa9d51414f41ac72182cb0ff0213.jpg"
+                                alt="main_slider2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://contents.kyobobook.co.kr/pmtn/2026/event/i_890_380_309ee95414e746949390892a3d0e8187.jpg"
+                                alt="main_slider3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://contents.kyobobook.co.kr/pmtn/2026/event/i_890_380_ebd1a903ff2341329ab8d53b4689727a.jpg"
+                                alt="main_slider4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://contents.kyobobook.co.kr/display/i_890_380_6974e9e91dd84287880c462e691aa1d7.jpg"
+                                alt="main_slider5">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper swiper_right">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://contents.kyobobook.co.kr/display/274x274_e8eaeb837ee4484e8d733603593a721d.jpg"
+                                alt="swiper_right1">
+                            zz
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://contents.kyobobook.co.kr/display/260312_274_274_8cdbec89cd5e47ccb3bc2f14a6915b0c.jpg"
+                                alt="swiper_right2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://contents.kyobobook.co.kr/display/260321_1_503f604fe4e842ef898abe0964c16cca.jpg"
+                                alt="swiper_right3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://contents.kyobobook.co.kr/display/260321_3_d75243026b324030acf272640e248ab2.jpg"
+                                alt="swiper_right4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://contents.kyobobook.co.kr/display/260321_2_21ecc016ca34425c92ef4bd3042d142c.jpg"
+                                alt="swiper_right5">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
-            <!-- <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
+            <div id="event">
+                <div id="event_left">
+                    <div id="first">
+                        <img src="" alt="">
+                        <span>혜택·이벤트</span>
+                    </div>
+                    <div id="second">
+                        <img src="https://contents.kyobobook.co.kr/display/PC_QM_02_64cc0909aafa42dfb07ed5ba786d2875.svg" alt="second">
+                        <span>오늘만특가</span>
+                    </div>
+                    <div id="third">
+                        <img src="https://contents.kyobobook.co.kr/display/appbe_0c494107eab549a79199fa4d47141cf1.svg" alt="third">
+                        <span>APP혜택</span>
+                    </div>
+                    <div id="fourth">
+                        <img src="https://contents.kyobobook.co.kr/display/PC_QM_giftcard_08bbace4167040c0b3e4d458ddf11c87.svg" alt="fourth">
+                        <span>기프트카드</span>
+                    </div>
+                    <div id="fifth">
+                        <img src="https://contents.kyobobook.co.kr/display/PC_QM_05_49332438b774409d9f20bf4a846be7fc.svg" alt="fifth">
+                        <span>바로출판</span>
+                    </div>
+                    <div id="sixth">
+                        <img src="https://contents.kyobobook.co.kr/display/PC_QM_06_38c389abadd8409ab7356a08d73eaa8a.svg" alt="sixth">
+                        <span>이달의 책</span>
+                    </div>
+                    <div id="seventh">
+                        <img src="https://contents.kyobobook.co.kr/display/PC_QM_07_9de19a2c196a45249134c640da579fb9.svg" alt="seventh">
+                        <span>손글씨대회</span>
+                    </div>
+                    <div id="eighth">
+                        <img src="https://contents.kyobobook.co.kr/display/gifticon_2ebd66f0a0f641099313a2b4470cbbd7.svg" alt="eighth">
+                        <span>오늘의굿즈</span>
+                    </div>
+                    <div id="ninth">
+                        <img src="https://contents.kyobobook.co.kr/display/PC_QM_09_a3d9d3b714b046278577fdede2372c46.svg" alt="ninth">
+                        <span>추천</span>
+                    </div>
+                    <div id="tenth">
+                        <img src="https://contents.kyobobook.co.kr/display/icon_a855dde694fa4df5ae823b17c97b2a50.svg" alt="tenth">
+                        <span>책그리고꽃</span>
+                    </div>
                 </div>
-                <div class="swiper-pagination"></div>
-            </div> -->
-        </div>
-        <div id="event">
-
+                <div id="event_right">
+                    <img src="https://contents.kyobobook.co.kr/display/스페셜광고배너 _i_274_96_fedaa7bfba54469b9a36010a20e50e9f.jpg" alt="event_right">
+                </div>
+            </div>
         </div>
     </main>
 
     <!-- 오늘의 선택부터 캐스팅까지 -->
     <section>
-
+        <div id="today_pick">
+            <div id="today_pick_top">
+                <h2>오늘의 선택</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#">국내도서</a></li>
+                        <li><a href="#">외국도서</a></li>
+                        <li><a href="#">eBook</a></li>
+                        <li><a href="#">sam</a></li>
+                        <li><a href="#">핫트랙스</a></li>
+                        <li><a href="#">교보only</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="today_pick_slider"></div>
+        </div>
+        <div id="ad">
+            <div id="ad_1">
+                <img src="https://contents.kyobobook.co.kr/advrcntr/IMAC/creatives/2026/03/19/67305/2-4-1_595x180.png" alt="ad_1">
+            </div>
+            <div id="ad_2">
+                <img src="https://contents.kyobobook.co.kr/advrcntr/IMAC/creatives/2026/03/19/69375/123123.jpg" alt="ad_2">
+            </div>
+        </div>
+        <div id="Recommendation">
+            <h2>어차피 책이 더 좋을 거에요</h2>
+            <div id="Recommendation_slider">
+                <div class="swiper Recommendation_Swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <div id="Recommendation_2">
+            <h2>출판사에서 자신있게 추천해요</h2>
+            <div id="Recommendation_2_slider">
+                <div class="swiper Recommendation_2_Swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <div id="best_book">
+            <div id="best_book_aside">
+                <div id="bb_h">
+                    <h2>베스트</h2>
+                    <h4>더보기 +</h4>
+                </div>
+                <div id="bb_all">
+                    <nav>
+                        <ul>
+                            <h3>전체</h3>
+                            <li><a href="#">국내도서</a></li>
+                            <li><a href="#">외국도서</a></li>
+                            <li><a href="#">eBook</a></li>
+                            <li><a href="#">sam</a></li>
+                            <li><a href="#">핫트랙스</a></li>
+                            <li><a href="#">교보only</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="bb_steadyseller">
+                    <nav>
+                        <ul>
+                            <h3>스테디셀러</h3>
+                            <li><a href="#">국내도서</a></li>
+                            <li><a href="#">외국도서</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div id="best_book_main">
+                <div id="best_book_main_1">
+                    <div id="bb1_picture_1">
+                        <a href="https://product.kyobobook.co.kr/detail/S000000479333">
+                            <img src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/filters:format(webp)/pdt/9788925588735.jpg" alt="bb1_picture_1">
+                            <span>1</span>
+                            <h4>프로젝트 헤일메리</h4>
+                        </a>
+                    </div>
+                    <div id="bb1_picture_2">
+                        <a href="https://product.kyobobook.co.kr/detail/S000001632467">
+                            <img src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9788998441012.jpg?v=492848" alt="bb1_picture_2">
+                            <span>2</span>
+                            <h4>모순</h4>
+                        </a>
+                    </div>
+                    <div id="bb1_picture_3">
+                        <a href="https://product.kyobobook.co.kr/detail/S000218438100">
+                            <img src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/filters:format(webp)/pdt/9791194530701.jpg" alt="bb1_picture_3">
+                            <span>3</span>
+                            <h4>괴테는 모든 것을 말했다</h4>
+                        </a>
+                    </div>
+                    <div id="bb1_picture_4">
+                        <a href="https://product.kyobobook.co.kr/detail/S000211613045">
+                            <img src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/filters:format(webp)/pdt/9780593135228.jpg" alt="bb1_picture_4">
+                            <span>4</span>
+                            <h4>Project Hall Mary</h4>
+                        </a>
+                    </div>
+                    <div id="bb1_picture_5">
+                        <a href="https://product.kyobobook.co.kr/detail/S000219310977">
+                            <img src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/filters:format(webp)/pdt/9791199383074.jpg" alt="bb1_picture_5">
+                            <span>5</span>
+                            <h4>완벽한 원시인</h4>
+                        </a>
+                    </div>
+                </div>
+                <div id="best_book_main_2">
+                    <div id="bb2_picture_1">
+                        <a href="https://product.kyobobook.co.kr/detail/S000219007185">
+                            <img src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/filters:format(webp)/pdt/9791198064356.jpg" alt="bb2_picture_1">
+                            <span>6</span>
+                            <h4>숨은민국</h4>
+                        </a>
+                    </div>
+                    <div id="bb2_picture_2">
+                        <a href="https://product.kyobobook.co.kr/detail/S000218969272">
+                            <img src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/filters:format(webp)/pdt/9791124038192.jpg" alt="bb2_picture_2">
+                            <span>7</span>
+                            <h4>나의 완벽한 장례식</h4>
+                        </a>
+                    </div>
+                    <div id="bb2_picture_3">
+                        <a href="https://product.kyobobook.co.kr/detail/S000219145799">
+                            <img src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/filters:format(webp)/pdt/9791199496651.jpg" alt="bb2_picture_3">
+                            <span>8</span>
+                            <h4>부처님 말씀대로 살아보니</h4>
+                        </a>
+                    </div>
+                    <div id="bb2_picture_4">
+                        <a href="https://product.kyobobook.co.kr/detail/S000219182450">
+                            <img src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/filters:format(webp)/pdt/9791124248171.jpg" alt="bb2_picture_4">
+                            <span>9</span>
+                            <h4>인생을 위한 최소한의 생각</h4>
+                        </a>
+                    </div>
+                    <div id="bb2_picture_5">
+                        <a href="https://product.kyobobook.co.kr/detail/S000217089705">
+                            <img src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/filters:format(webp)/pdt/9791199305304.jpg" alt="bb2_picture_5">
+                            <span>10</span>
+                            <h4>자몽살구클럽</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="banner">
+            <img src="https://contents.kyobobook.co.kr/advrcntr/IMAC/creatives/2026/03/20/75127/youlast_kyobo_260318_welcomebigwide.jpg" alt="banner">
+        </div>
+        <div id="casting">
+            <h2>CASTing</h2>
+            <div id="casting_slider">
+                <div class="swiper casting_slider_Swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- 캐스팅부터 마지막까지 -->
-    <footer></footer>
+    <footer>
+        footer
+    </footer>
 
 
 
@@ -106,7 +427,8 @@
 
     <!-- Initialize Swiper -->
     <script src="./js/swiper.js"></script>
-    <script src="./js/book.js"></script>
+    <script src="./js/Recommendation.js"></script>
+    <script src="./js/Recommendation_2.js"></script>
 </body>
 
 </html>
