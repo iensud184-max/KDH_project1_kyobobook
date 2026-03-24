@@ -22,10 +22,7 @@ var mainswiper_right = new Swiper(".swiper_right", {
 var Recommendation_swiper = new Swiper(".Recommendation_Swiper", {
     slidesPerView: 6,
     spaceBetween: 25,
-    pagination: {
-        el: "#Recommendation .swiper-pagination",
-        clickable: true,
-    },
+    
     navigation: {
         nextEl: "#Recommendation .swiper-button-next",
         prevEl: "#Recommendation .swiper-button-prev",
@@ -37,10 +34,7 @@ var Recommendation_swiper = new Swiper(".Recommendation_Swiper", {
 var Recommendation_2_swiper = new Swiper(".Recommendation_2_Swiper", {
     slidesPerView: 6,
     spaceBetween: 25,
-    pagination: {
-        el: "#Recommendation_2 .swiper-pagination",
-        clickable: true,
-    },
+    
     navigation: {
         nextEl: "#Recommendation_2 .swiper-button-next",
         prevEl: "#Recommendation_2 .swiper-button-prev",
@@ -52,10 +46,7 @@ var Recommendation_2_swiper = new Swiper(".Recommendation_2_Swiper", {
 var casting_slider_Swiper = new Swiper(".casting_slider_Swiper", {
     slidesPerView: 5,
     spaceBetween: 25,
-    pagination: {
-        el: "#casting .swiper-pagination",
-        clickable: true,
-    },
+    
     navigation: {
         nextEl: "#casting .swiper-button-next",
         prevEl: "#casting .swiper-button-prev",
