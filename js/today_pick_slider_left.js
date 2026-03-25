@@ -1,8 +1,8 @@
-async function bookData() {
+async function bookData3() {
     const params = new URLSearchParams({
         target: "title",
-        query: "주식",
-        size: 18
+        query: "영화",
+        size: 10
     });
 
     const url = `https://dapi.kakao.com/v3/search/book?${params}`
@@ -23,7 +23,7 @@ async function bookData() {
         console.log(data);
 
         // .box 요소 전체 선택
-        const boxElements = document.querySelectorAll("#Recommendation .swiper-slide");
+        const boxElements = document.querySelectorAll("#today_pick_slider_left .swiper-slide");
 
         // documents 데이터를 각 box에 대응하여 렌더링
         boxElements.forEach((box, i) => {
@@ -32,8 +32,15 @@ async function bookData() {
             if (!doc) return; // 데이터가 부족할 경우 생략
 
             // 요소 생성 및 추가
-            box.innerHTML = `<img src="${data.documents[i].thumbnail}">
-                    <h3>${data.documents[i].title}</h3>`
+            box.innerHTML = `
+                <a href="#">
+                    <img src="${data.documents[i].thumbnail}">
+                    <div id="slider_text">
+                        <h3>${data.documents[i].title}</h3>
+                        <h4>${data.documents[i].authors}</h4>
+                        <h5>${data.documents[i].contents.slice(0, 150) + '...'}</h5>
+                    </div>
+                </a>`
         });
 
     } catch (error) {
@@ -41,4 +48,4 @@ async function bookData() {
     }
 }
 
-bookData();
+bookData3();

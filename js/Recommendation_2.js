@@ -1,7 +1,7 @@
 async function bookData2() {
     const params = new URLSearchParams({
         target: "title",
-        query: "apple",
+        query: "요리",
         size: 18
     });
 
@@ -33,9 +33,7 @@ async function bookData2() {
 
             // 요소 생성 및 추가
             box.innerHTML = `<img src="${data.documents[i].thumbnail}">
-                    <h3>${data.documents[i].title}</h3>
-                    <h6>${data.documents[i].authors}</h6>
-                    <p>${data.documents[i].price}</p>                    `
+                    <h3>${data.documents[i].title}</h3>`
         });
 
     } catch (error) {
