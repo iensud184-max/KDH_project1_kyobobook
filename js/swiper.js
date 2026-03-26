@@ -21,11 +21,13 @@ let isPaused = false;
 autoplayBtn.addEventListener("click", () => {
     if (isPaused) {
         mainswiper.autoplay.start();
-        autoplayBtn.textContent = "⏸️"; // 다시 재생 모양
+        autoplayBtn.textContent = "⏸";
+        autoplayBtn.classList.remove("play-mode");
         isPaused = false;
     } else {
         mainswiper.autoplay.stop();
-        autoplayBtn.textContent = "▶️"; // 일시정지 후 재생 아이콘
+        autoplayBtn.textContent = "▶";
+        autoplayBtn.classList.add("play-mode");
         isPaused = true;
     }
 });

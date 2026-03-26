@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+/*//////////////////////// hearder ////////////////////////*/
+header {
+    width: 100%;
+    height: 42px;
+    margin: 0 auto;
+}
+
+/*//////////////////////// main ////////////////////////*/
+main {
+    width: 1202px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 0px;
+}
+
+#main_page {
+    width: 1202px;
+    height: 1050px;
+    margin: 0 auto;
+    padding-top: 90px;
+    background-color: gold;
+}
+
+#sub_page {
+    width: 1202px;
+    height: 8322px;
+    margin: 0 auto;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+}
+
+#sub_page_left {
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+
+#sub_event {
+    width: 805px;
+    width: 515px;
+    background-color: azure;
+}
+
+#sub_bookcard {
+    width: 100%;
+    height: 440px;
+    margin-top: 135px;
+    background-color: blueviolet;
+}
+
+#sub_AI {
+    width: 100%;
+    height: 440px;
+    margin-top: 70px;
+    background-color:burlywood;
+}
+
+#sub_img {
+    width: 100%;
+    height: 4670px;
+    margin-top: 60px;
+}
+
+#sub_introduction {
+    width: 100%;
+    height: 250px;
+    margin-top: 65px;
+    background-color: darkmagenta;
+}
+
+#sub_Awards {
+    width: 100%;
+    height: 340px;
+    padding: 30px 0 30px 0; 
+    background-color: deepskyblue;
+}
+
+#sub_introduction_main {
+    width: 100%;
+    height: 430px;
+    background-color: coral;
+}
+
+#sub_page_right {
+    width: 330px;
+    height: 100%;
+    padding: 30px 0 70px 0;
+    background-color: aliceblue;
+}

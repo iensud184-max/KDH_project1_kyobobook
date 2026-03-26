@@ -3,20 +3,22 @@
 /*//////////////////////// hearder ////////////////////////*/
 header {
     width: 100%;
-    height: 114px;
+    height: 112px;
     margin: 0 auto;
-    background-color: #f4f4f4;
-}
-
-#header_top {
-    width: 100%;
-    height: 72px;
 }
 
 #header_top_img {
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: #f4f4f4;
+}
+
+#header_bottom {
+    width: 100%;
+    height: 42px;
+    background-color: #f4f4f4;
+    background: linear-gradient(to right, white 0%, white 30%, #f4f4f4 30%, #f4f4f4 100%);
 }
 
 #header_main {
@@ -33,20 +35,29 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+
+#header_color svg {
+    position: relative;
+    z-index: 1;
 }
 
 #category {
     width: 575px;
     height: 42px;
-    justify-content: space-around;
-    align-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 160px;
+    
 }
 
-#category nav ul {
-    display: flex;
-    justify-content: space-around;
-    font-size: medium;
-    font-weight: bold;
+#category svg {
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 }
 
 #login {
@@ -61,17 +72,12 @@ header {
     padding: 0.635px 0 0.635px 0;
 }
 
-#header_not_color {
-    width: 177px;
-    height: 100%;
-    background-color: white;
-}
-
 /*//////////////////////// main ////////////////////////*/
 main {
     width: 1202px;
     height: 667px;
     margin: 0 auto;
+    margin-top: 55px;
 }
 
 #main_top {
@@ -140,23 +146,27 @@ main {
 
 #shopping {
     i {
+        display: inline-block;
         width: 32px;
         height: 28px;
         margin: 33px 20px 0 20px;
         transform: scale(1.4);
+        box-sizing: border-box;
     }
 }
 
 #mypage {
     i {
+        display: inline-block;
         width: 49px;
         height: 49px;
         margin: 45px 1px 0 10px;
         transform: scale(1.9);
+        box-sizing: border-box;
     }
 }
 
-menu {
+#menu {
     width: 100%;
     height: 67px;
     display: flex;
@@ -254,13 +264,20 @@ menu {
     bottom: 16px;
     right: 16px;
     z-index: 20;
-    padding: 6px 10px;
+    padding: 4px 10px;
     font-size: 16px;
     border: none;
     border-radius: 4px;
     background-color: rgba(0,0,0,0.5);
     color: #fff;
     cursor: pointer;
+    transform: scale(1.1);
+}
+
+.main_swiper .autoplay-btn.play-mode {
+    font-size: 14px;
+    padding: 4.5px 11px;
+    /* transform: scale(0.9); */
 }
 
 .swiper_right {
@@ -329,6 +346,14 @@ menu {
     justify-content: center;
     align-items: center;
     font-size: 14px;
+}
+
+#event_left #first_img {
+    width: 68px;
+    height: 69px;
+    padding: 17px;
+    background-color: #f4f4f4;
+    border-radius: 15px;
 }
 
 #event_right {
