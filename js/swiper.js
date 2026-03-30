@@ -34,14 +34,16 @@ autoplayBtn.addEventListener("click", () => {
 
 // swiper_right
 var mainswiper_right = new Swiper(".swiper_right", {
-      pagination: {
-        el: ".swiper_right .swiper-pagination",
+    loop: true,
+    pagination: {
+    el: ".swiper_right .swiper-pagination",
         dynamicBullets: true,
-      },
-    });
+    },
+});
 
 // Recommendation
 var Recommendation_swiper = new Swiper(".Recommendation_Swiper", {
+    loop: true,
     slidesPerView: 6,
     spaceBetween: 25,
     
@@ -54,6 +56,7 @@ var Recommendation_swiper = new Swiper(".Recommendation_Swiper", {
 
 // Recommendation_2
 var Recommendation_2_swiper = new Swiper(".Recommendation_2_Swiper", {
+    loop: true,
     slidesPerView: 6,
     spaceBetween: 25,
     
@@ -66,6 +69,7 @@ var Recommendation_2_swiper = new Swiper(".Recommendation_2_Swiper", {
 
 // casting_slider
 var casting_slider_Swiper = new Swiper(".casting_slider_Swiper", {
+    loop: true,
     slidesPerView: 5,
     spaceBetween: 25,
     
@@ -78,6 +82,7 @@ var casting_slider_Swiper = new Swiper(".casting_slider_Swiper", {
 
 // today_pick_slider today_pick_slider_left
 var tpsl_swiper = new Swiper(".today_pick_slider_left_Swiper", {
+    loop: true,
     slidesPerView: 1,
     spaceBetween: 30,
 
@@ -89,6 +94,7 @@ var tpsl_swiper = new Swiper(".today_pick_slider_left_Swiper", {
 
 // today_pick_slider today_pick_slider_right
 var tpsr_swiper = new Swiper(".today_pick_slider_right_Swiper", {
+    loop: true,
     initialSlide: 1,
     slidesPerView: 3,
     spaceBetween: 30,

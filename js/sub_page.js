@@ -150,3 +150,11 @@ var sub_AI_book = new Swiper(".sub_discovery_Swiper", {
     slidesOffsetBefore: 10,
     slidesOffsetAfter: 10
 });
+
+// sub_main_page_center
+var sub_main_page_center_swiper = new Swiper(".sub_main_2_Swiper", {
+      navigation: {
+        nextEl: "#sub_main_2 .swiper-button-next",
+        prevEl: "#sub_main_2 .swiper-button-prev",
+      },
+    });

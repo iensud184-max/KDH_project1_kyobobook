@@ -163,28 +163,18 @@ main {
     display: flex;
     justify-content: flex-end;
     margin-right: 30px;
+    align-items: center;
 }
 
-#shopping {
-    i {
-        display: inline-block;
-        width: 32px;
-        height: 28px;
-        margin: 33px 20px 0 20px;
-        transform: scale(1.4);
-        box-sizing: border-box;
-    }
+#shopping svg {
+    width: 36px;
+    height: 36px;
+    margin-right: 15px;
 }
 
-#mypage {
-    i {
-        display: inline-block;
-        width: 49px;
-        height: 49px;
-        margin: 45px 1px 0 10px;
-        transform: scale(1.9);
-        box-sizing: border-box;
-    }
+#mypage svg {
+    width: 48px;
+    height: 48px;
 }
 
 #menu {
@@ -195,19 +185,24 @@ main {
 }
 
 #menu_img {
-    width: 46px;
-    height: 46px;
-    transform: scale(1.7);
-    padding: 9px 0 0 20px;
+    display: flex;
+    align-items: center;
+    padding-top: 9px;
 }
 
 #menu_img_btn {
+    width: 55px;
+    height: 55px;
     border: none;
     background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #eaeaea;
 }
 
-#menu_img_btn i {
-    background-color: transparent;
+#menu_img_btn svg {
+    width: 25px;
+    height: 25px;
+    margin: 10px;
 }
 
 
@@ -215,13 +210,12 @@ main {
     width: 845px;
     height: 67px;
     align-content: center;
-    
 }
 
 #menu_text nav ul{
     display: flex;
     justify-content: space-between;
-    padding: 0 0 4px 25px;
+    padding-left: 25px;
 }
 
 #main_down {
@@ -480,6 +474,8 @@ section {
 #today_pick_slider_right {
     width: 453px;
     height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 #today_pick_slider_right .swiper-slide {
