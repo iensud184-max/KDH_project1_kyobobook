@@ -33,7 +33,7 @@ async function bookData3() {
 
             // 요소 생성 및 추가
             box.innerHTML = `
-                <a href="#">
+                <a href="sub.html">
                     <img src="${data.documents[i].thumbnail}">
                     <div id="slider_text">
                         <h3>${data.documents[i].title}</h3>

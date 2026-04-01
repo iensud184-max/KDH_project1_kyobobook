@@ -32,8 +32,11 @@ async function bookData() {
             if (!doc) return; // 데이터가 부족할 경우 생략
 
             // 요소 생성 및 추가
-            box.innerHTML = `<img src="${data.documents[i].thumbnail}">
-                    <h3>${data.documents[i].title}</h3>`
+            box.innerHTML = `
+                <a href="sub.html">
+                    <img src="${data.documents[i].thumbnail}">
+                    <h3>${data.documents[i].title}</h3>
+                </a>`
         });
 
     } catch (error) {
